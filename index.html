@@ -9,32 +9,51 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Superkvíz ševce Čiče</h1>
+	<h1>Superkvíz pro ševce Čiče</h1>
+	
+<h2>!!! Pokud neuhodneš všechny hádanky, propadneš peklu !!! <img src="obrazky/devil.png"></h2>
+
 	
 	<div class = "kviz">
+		
 		<div id ="poradi"></div>
 		<h2 id = "otazka"></h2>
 
-		<div class = "obsah">
+	<!----	<div class = "obsah">
 			<div class="foto">
 			<img id = "obrazek" src="obrazky/snehurka.jpg">
 			</div>
 			<div id="moznosti">
 				<ul id="odpovedi">
-				<li id = "jedna" data-odpoved="0"></li>
-				<li id = "dve" data-odpoved="1"></li>
-				<li id = "tri" data-odpoved="2"></li>
+				<li class = "odpoved" data-odpoved="0"></li>
+				<li class = "odpoved" data-odpoved="1"></li>
+				<li class = "odpoved" data-odpoved="2"></li>
+				
 				</ul>
 			</div>
-			<div>
-
+		<div> 
+		-->
 		
-	
 	</div>
-		<div class="vysledek">
-			
 
-		</div>	
+
+	<div class="vysledek">
+			<h2>Tvoje hodnocení</h2>
+			<div id="hodnoceni">
+				<h3>1. Kdo umí všechny řeči?</h3>
+				<div>Tvoje odpověď:<span id="tvoje1"></span></div>
+				<div>Správná odpověď: Ozvěna</div>
+				<h3>2. Naháč nahatý, nahatější být nemůže. Co je to?</h3>
+				<div>Tvoje odpověď:<span id="tvoje2"></span></div>
+				<div>Správná odpověď: Lidská kostra</div>
+				<h3>3. Kdo mě našel, ztratil mne. Co je to?</h3>
+				<div>Tvoje odpověď:<span id="tvoje3"></span></div>
+				<div>Správná odpověď: Hádanka</div>
+				<h2>Správně <span id="soucet-odpovedi">0</span> ze 3 hádanek.</h2>
+
+			</div>
+
+	</div>	
 		
 	
 	<script src="main.js"></script>
